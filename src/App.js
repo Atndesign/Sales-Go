@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import Converter from './components/converter/index.jsx'
+import Result from './components/result/index.jsx'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <header>
+        <a>
+          <img className="" srcset="./img/logoBlack.svg" src="./img/logoBlack.png"></img>
         </a>
+        <h1>Sales&Go</h1>
       </header>
+      <Converter />
+      <Result />
     </div>
   );
 }
