@@ -8,12 +8,12 @@ class Converter extends React.Component{
 
     render(){
         return(
-            <form className="calculation">
-                <label className="calculation__label" htmlFor="percentage">What does</label>
-                <input className="calculation__inputs" id="percentage" type="number"/>
-                <label className="calculation__label" htmlFor="price">of</label>
-                <input className="calculation__inputs" id="price" type="number"/>
-                <button className="calculation__btn">Calculate</button>
+            <form className="converter">
+                <label className="converter__label" htmlFor="percentage">What does</label>
+                <input className="converter__inputs" id="percentage" type="number" placeholder="Enter percentage"/>
+                <label className="converter__label" htmlFor="price">of</label>
+                <input className="converter__inputs" id="price" type="number" placeholder="Enter the price"/>
+                <button className="converter__btn">Calculate</button>
             </form>
         )
     }

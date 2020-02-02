@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <header>
         <a>
-          <img className="" srcset="./img/logoBlack.svg" src="./img/logoBlack.png"></img>
+          <img className="logo" srcset="./img/logoBlack.svg" src="./img/logoBlack.png" width="27" height="22"></img>
         </a>
-        <h1>Sales&Go</h1>
+        <h1 className="title">Sales&Go</h1>
       </header>
       <Converter />
       <Result />

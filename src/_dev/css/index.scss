@@ -1,0 +1,13 @@
+@import "./_partials/reset";
+@import "./_partials/fonts";
+@import "./_partials/variable";
+
+//Default
+p,h1,h2,label{
+        color: $black;
+        font-family: $font-family-base;
+}
+//Components
+@import "./components/header.scss";
+@import "./components/converter.scss";
+//Common
