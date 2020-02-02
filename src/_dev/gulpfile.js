@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass',function(){
-    return gulp.src('css/style.scss')
+    return gulp.src('css/index.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer({
@@ -12,14 +12,9 @@ gulp.task('sass',function(){
             cascade: false
         }))
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('../css'));
+        .pipe(gulp.dest('../'));
 })
 
-gulp.task('move',function(){
-    return gulp.src('img/**/*')
-        .pipe(gulp.dest('../img/'));
-});
-
 gulp.task('watch', function(){
-    gulp.watch('css/**/*.scss', gulp.series('sass','move'))
+    gulp.watch('css/**/*.scss', gulp.series('sass'))
 })
