@@ -1,6 +1,5 @@
 // Components/Converter
 import React from "react";
-import Result from "../result";
 
 class Converter extends React.Component{
     constructor(props){
