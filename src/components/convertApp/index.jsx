@@ -11,15 +11,17 @@ class ConvertApp extends React.Component{
         }
         this.calculate = this.calculate.bind(this);
     }
-    
-    calculate(percentage, price,e){
+    calculate(percentage, price,e, inputThis){
         e.preventDefault()
-        var result = (percentage / 100) * price;
+        var discount = (percentage / 100) * price;
+        var result = price - discount;
         this.setState({
-            percentage: 0,
-            price: 0,
+            percentage: "",
+            price: "",
             result: result,
         })
+        inputThis.inputHandler("percentage","");
+        inputThis.inputHandler("price","");
     }
     render(){
         return(
@@ -30,7 +32,7 @@ class ConvertApp extends React.Component{
                     </a>
                     <h1 className="title">Sales&Go</h1>
                 </header>
-                <Converter percentage={this.state.percentage} price={this.state.price} calculate={this.calculate} />
+                <Converter percentage={this.state.percentage} price={this.state.price} calculate={this.calculate} inputHandler={this.inputHandler} />
                 <Result result={this.state.result} />
             </div>        
         )
