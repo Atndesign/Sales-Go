@@ -1,0 +1,11 @@
+.result{
+    .result__text{
+        text-align: center;
+    }
+    .result__number{
+        margin-top: $sm-marg;
+        text-align: center;
+        font-weight: 900;
+        font-size: 36px;
+    }
+}

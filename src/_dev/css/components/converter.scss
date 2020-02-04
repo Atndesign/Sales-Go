@@ -11,20 +11,23 @@
         border: none;
         background: #EEEEEE;
         width: 75%;
-        height: 35px;
+        height: 45px;
         margin-bottom: $sm-marg;
         padding-left: 10px;
         &::placeholder{
             font-size: $font-size-sm;
+            color: #0A0A0A;
         }
     }
     .converter__btn{
         margin-top: $lg-marg - $sm-marg;
+        margin-bottom: $lg-marg;
         background: $blue;
         border: none;
         color: white;
         width: 80%;
         padding-top: 10px;
         padding-bottom: 10px;
+        height: 45px;
     }
 }
